@@ -1,0 +1,446 @@
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (branch_3)
+$ git add .
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (branch_3)
+$ git commit -m "tạo nhánh 3"
+[branch_3 f9af62d] tạo nhánh 3
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_3.txt
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (branch_3)
+$ git push origin branch_3
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 377 bytes | 377.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_3' on GitHub by visiting:
+remote:      https://github.com/NgoNgocChien-25174600200-DHKL19A4HN/25174600200_ngo_ngoc_chien_bai_tap-/pull/new/branch_3
+remote:
+To https://github.com/NgoNgocChien-25174600200-DHKL19A4HN/25174600200_ngo_ngoc_chien_bai_tap-.git
+ * [new branch]      branch_3 -> branch_3
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (branch_3)
+$ git check out main
+git: 'check' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (branch_3)
+$ git chechout main
+git: 'chechout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (branch_3)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (main)
+$ git checkout -b "branch_4"
+Switched to a new branch 'branch_4'
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (branch_4)
+$ echo "Cras ac mi nec nisi porta ultrices sed non ante." > text_branch_4.txt
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (branch_4)
+$ git add .
+warning: in the working copy of 'text_branch_4.txt', LF will be replaced by CRLF the next time Git touches it
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (branch_4)
+$ git commit -m "tạo nhánh 4"
+[branch_4 329ddae] tạo nhánh 4
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_4.txt
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (branch_4)
+$ git push origin branch_4
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 369 bytes | 369.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_4' on GitHub by visiting:
+remote:      https://github.com/NgoNgocChien-25174600200-DHKL19A4HN/25174600200_ngo_ngoc_chien_bai_tap-/pull/new/branch_4
+remote:
+To https://github.com/NgoNgocChien-25174600200-DHKL19A4HN/25174600200_ngo_ngoc_chien_bai_tap-.git
+ * [new branch]      branch_4 -> branch_4
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (branch_4)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (main)
+$ git branch -d branch_4
+error: the branch 'branch_4' is not fully merged
+hint: If you are sure you want to delete it, run 'git branch -D branch_4'
+hint: Disable this message with "git config set advice.forceDeleteBranch false"
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (main)
+$ git branch -D branch_4
+Deleted branch branch_4 (was 329ddae).
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (main)
+$ git branch
+  branch_1
+  branch_2
+  branch_3
+* main
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (main)
+$ git branch -r
+  origin/HEAD -> origin/main
+  origin/branch_1
+  origin/branch_2
+  origin/branch_3
+  origin/branch_4
+  origin/main
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (main)
+$ cd đường_dẫn_đến_thư_mục_project
+bash: cd: đường_dẫn_đến_thư_mục_project: No such file or directory
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (main)
+$ cd ~/Documents/25174600200_Ngo_Ngoc_Chien_bai_tap-
+bash: cd: /c/Users/Admin/Documents/25174600200_Ngo_Ngoc_Chien_bai_tap-: No such file or directory
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (main)
+$ cd 25174600200_Ngo_Ngoc_Chien_bai_tap-
+bash: cd: 25174600200_Ngo_Ngoc_Chien_bai_tap-: No such file or directory
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (main)
+$ git branch
+  branch_1
+  branch_2
+  branch_3
+* main
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (main)
+$ git pull origin main
+From https://github.com/NgoNgocChien-25174600200-DHKL19A4HN/25174600200_ngo_ngoc_chien_bai_tap-
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (main)
+$ mkdir main_folder
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (main)
+$ cd main_folder
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap-/main_folder (main)
+$ echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit." > main_txt_1.txt
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap-/main_folder (main)
+$ echo "Praesent ullamcorper orci eu erat placerat sodales." > main_txt_2.txt
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap-/main_folder (main)
+$ echo "Integer sit amet nisi aliquam, tempor libero quis, cursus erat." > main_txt_3.txt
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap-/main_folder (main)
+$ cd ..
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (main)
+$ git add main_folder
+warning: in the working copy of 'main_folder/main_txt_1.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'main_folder/main_txt_2.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'main_folder/main_txt_3.txt', LF will be replaced by CRLF the next time Git touches it
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (main)
+$ git commit -m "Tạo thư mục main_folder và thêm 3 file main_txt_1.txt, main_txt_2.txt, main_txt_3.txt"
+[main b626600] Tạo thư mục main_folder và thêm 3 file main_txt_1.txt, main_txt_2.txt, main_txt_3.txt
+ 3 files changed, 3 insertions(+)
+ create mode 100644 main_folder/main_txt_1.txt
+ create mode 100644 main_folder/main_txt_2.txt
+ create mode 100644 main_folder/main_txt_3.txt
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (main)
+$ git push origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Merge branch 'main' into branch_1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Merge made by the 'ort' strategy.
+ main_folder/main_txt_1.txt | 1 +
+ main_folder/main_txt_2.txt | 1 +
+ main_folder/main_txt_3.txt | 1 +
+ 3 files changed, 3 insertions(+)
+ create mode 100644 main_folder/main_txt_1.txt
+ create mode 100644 main_folder/main_txt_2.txt
+ create mode 100644 main_folder/main_txt_3.txt
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (branch_1)
+$ git push origin branch_1
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Merge branch 'main' into branch_2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Merge made by the 'ort' strategy.
+ main_folder/main_txt_1.txt | 1 +
+ main_folder/main_txt_2.txt | 1 +
+ main_folder/main_txt_3.txt | 1 +
+ 3 files changed, 3 insertions(+)
+ create mode 100644 main_folder/main_txt_1.txt
+ create mode 100644 main_folder/main_txt_2.txt
+ create mode 100644 main_folder/main_txt_3.txt
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (branch_2)
+$ git push origin branch_2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Merge branch 'main' into branch_3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Merge made by the 'ort' strategy.
+ main_folder/main_txt_1.txt | 1 +
+ main_folder/main_txt_2.txt | 1 +
+ main_folder/main_txt_3.txt | 1 +
+ 3 files changed, 3 insertions(+)
+ create mode 100644 main_folder/main_txt_1.txt
+ create mode 100644 main_folder/main_txt_2.txt
+ create mode 100644 main_folder/main_txt_3.txt
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (branch_3)
+$ git push origin branch_3
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 388 bytes | 388.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/NgoNgocChien-25174600200-DHKL19A4HN/25174600200_ngo_ngoc_chien_bai_tap-.git
+   f9af62d..7e78cb4  branch_3 -> branch_3
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (branch_3)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (main)
+$ Bài 7: Tạo nhánh mới banch_5 bắt nguốn từ nhánh branch_1. Tại đây thực hiện ch
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (main)
+$ git checkout branch_1
+Switched to branch 'branch_1'
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (branch_1)
+$ git checkout -b branch_5
+Switched to a new branch 'branch_5'
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (branch_5)
+$ git add text_branch_1.txt
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (branch_5)
+$ git commit -m "Cập nhật nội dung text_branch_1.txt trên branch_5"
+[branch_5 9029d9d] Cập nhật nội dung text_branch_1.txt trên branch_5
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (branch_5)
+$ git push origin branch_5
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 700 bytes | 700.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'branch_5' on GitHub by visiting:
+remote:      https://github.com/NgoNgocChien-25174600200-DHKL19A4HN/25174600200_ngo_ngoc_chien_bai_tap-/pull/new/branch_5
+remote:
+To https://github.com/NgoNgocChien-25174600200-DHKL19A4HN/25174600200_ngo_ngoc_chien_bai_tap-.git
+ * [new branch]      branch_5 -> branch_5
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (branch_5)
+$ git checkout branch_
+error: pathspec 'branch_' did not match any file(s) known to git
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (branch_5)
+$ git checkout branch_5
+Already on 'branch_5'
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (branch_5)
+$ git pull origin branch_5
+From https://github.com/NgoNgocChien-25174600200-DHKL19A4HN/25174600200_ngo_ngoc_chien_bai_tap-
+ * branch            branch_5   -> FETCH_HEAD
+Already up to date.
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (branch_5)
+$ git merge branch_1
+Already up to date.
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (branch_5)
+$ git add text_branch_1.txt
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (branch_5)
+$ git commit -m "Giải quyết conflict, giữ nội dung từ branch_5"
+On branch branch_5
+nothing to commit, working tree clean
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (branch_5)
+$ git push origin branch_5
+Everything up-to-date
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (branch_5)
+$ git branch -d branch_2
+error: the branch 'branch_2' is not fully merged
+hint: If you are sure you want to delete it, run 'git branch -D branch_2'
+hint: Disable this message with "git config set advice.forceDeleteBranch false"
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (branch_5)
+$ git branch -d branch_2
+error: the branch 'branch_2' is not fully merged
+hint: If you are sure you want to delete it, run 'git branch -D branch_2'
+hint: Disable this message with "git config set advice.forceDeleteBranch false"
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (branch_5)
+$ git branch -D branch_2
+Deleted branch branch_2 (was ad94cb6).
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (branch_5)
+$ git branch -D branch_3
+Deleted branch branch_3 (was 7e78cb4).
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (branch_5)
+$ git branch -D branch_4
+error: branch 'branch_4' not found
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (branch_5)
+$ git branch -D branch_4
+error: branch 'branch_4' not found
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (branch_5)
+$ git branch
+  branch_1
+* branch_5
+  main
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (branch_5)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (main)
+$ git push origin --delete branch_2
+To https://github.com/NgoNgocChien-25174600200-DHKL19A4HN/25174600200_ngo_ngoc_chien_bai_tap-.git
+ - [deleted]         branch_2
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (main)
+$ git push origin --delete branch_3
+To https://github.com/NgoNgocChien-25174600200-DHKL19A4HN/25174600200_ngo_ngoc_chien_bai_tap-.git
+ - [deleted]         branch_3
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (main)
+$ git push origin --delete branch_4
+To https://github.com/NgoNgocChien-25174600200-DHKL19A4HN/25174600200_ngo_ngoc_chien_bai_tap-.git
+ - [deleted]         branch_4
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (main)
+$ git checkout branch_1
+Switched to branch 'branch_1'
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (branch_1)
+$ git pull origin main
+remote: Enumerating objects: 27, done.
+remote: Counting objects: 100% (27/27), done.
+remote: Compressing objects: 100% (22/22), done.
+remote: Total 23 (delta 7), reused 8 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (23/23), 7.69 KiB | 393.00 KiB/s, done.
+From https://github.com/NgoNgocChien-25174600200-DHKL19A4HN/25174600200_ngo_ngoc_chien_bai_tap-
+ * branch            main       -> FETCH_HEAD
+   b626600..4b55a72  main       -> origin/main
+Updating 1834b45..4b55a72
+Fast-forward
+ text_branch_1.txt | 11 ++++++++++-
+ text_branch_2.txt |  1 +
+ text_branch_3.txt |  1 +
+ text_branch_4.txt |  1 +
+ 4 files changed, 13 insertions(+), 1 deletion(-)
+ create mode 100644 text_branch_2.txt
+ create mode 100644 text_branch_3.txt
+ create mode 100644 text_branch_4.txt
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (branch_1)
+$ git push origin branch_1
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/NgoNgocChien-25174600200-DHKL19A4HN/25174600200_ngo_ngoc_chien_bai_tap-.git
+   75c4491..4b55a72  branch_1 -> branch_1
+
+Admin@DESKTOP-KNR110V MINGW64 ~/Documents/git 19A4/25174600200_ngo_ngoc_chien_bai_tap- (branch_1)
+$ 
+đoạn đầu em lỡ tay bấm thoát tab nên ko sao chép lại được ạ
